@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  rott
+  root to: 'page#home'
 end
