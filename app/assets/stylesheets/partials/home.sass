@@ -1,18 +1,86 @@
 .home__header
   display: flex
   height: 100vh
-  background: #FBFBFB
+  background: #EA6D59
+
+  .home__header-content
+    display: flex
+
+  .home__navbar
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    padding-top: 50px
+
+    ul
+      list-style-type: none
+      padding: 0px
+
+      li
+        display: inline
+        padding-right: 40px
+        color: #373F51
+
+        &:before
+          content: '/'
+          padding-right: 10px
+
+  .home__editor
+    width: 33%
+    img
+      position: relative
+      top: 100px
+      right: 320px
+      height: 475px
+      box-shadow: 0 11px 50px -11px #150907
 
   .home__introduction
     display: flex
     justify-content: center
     flex-direction: column
-    height: 100%
+    margin-top: 250px
+    width: 66%
     box-sizing: border-box
+    z-index: 50
+    background: #EA6D59
 
-  h1
+  h1, h3, p
     color: #373F51
     margin: 3px 0
-    font-size: 110px
-    letter-spacing: -2px
+
+  h1
+    font-family: 'Cormorant Garamond'
+    font-size: 90px
     font-weight: 700
+    padding-left: 5px
+
+    span
+      color: white
+
+  h3
+    font-size: 30px
+    margin-bottom: -10px
+    font-style: italic
+
+  p
+    font-size: 24px
+    max-width: 500px
+    color: #684C53
+    margin-left: 6px
+    color: #282e3c
+
+    span
+      background: image-url('tint.png')
+      padding: 5px
+      line-height: 35px
+
+
+
+
+
+
+
+
+
+
+
