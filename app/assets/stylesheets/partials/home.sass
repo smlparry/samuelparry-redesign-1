@@ -1,12 +1,17 @@
-.home__header
+$background: #D55745
+$header-accent: white
+$border-color: darken(#CF5341, 8%)
+
+.header
   display: flex
   height: 100vh
-  background: #EA6D59
+  background: $background
+  background-image: image-url("header.png")
 
-  .home__header-content
+  .header__content
     display: flex
 
-  .home__navbar
+  .header__navbar
     display: flex
     justify-content: flex-end
     width: 100%
@@ -25,7 +30,7 @@
           content: '/'
           padding-right: 10px
 
-  .home__editor
+  .header__editor
     width: 33%
     img
       position: relative
@@ -34,53 +39,61 @@
       height: 475px
       box-shadow: 0 11px 50px -11px #150907
 
-  .home__introduction
+  .header__introduction
     display: flex
     justify-content: center
     flex-direction: column
-    margin-top: 250px
-    width: 66%
+    margin-top: 100px
+    width: 100%
     box-sizing: border-box
     z-index: 50
-    background: #EA6D59
+    border: 5px solid $border-color
+    background: rgba($background, 0.8)
+    padding: 50px
+    padding-top: 69px
+    transition: all 0.8s
+
+    &:hover
+      transform: translateY(-10px)
+      box-shadow: 0 5px 15px darken(#D75846, 10%)
+
+      h1
+        right: -25px
 
   h1, h3, p
-    color: #373F51
+    color: $border-color
     margin: 3px 0
 
   h1
-    font-family: 'Cormorant Garamond'
     font-size: 90px
     font-weight: 700
-    padding-left: 5px
+    padding: 15px
+    position: relative
+    right: 69px
+    background: $background
+    padding-left: 0
+    border-bottom-left-radius: 10px
+    border-top-left-radius: 10px
+    transition: all 0.5s
 
     span
-      color: white
+      color: $header-accent
+      background: initial
+      opacity: 0.9
 
   h3
     font-size: 30px
-    margin-bottom: -10px
     font-style: italic
+    margin-bottom: -5px
 
   p
     font-size: 24px
     max-width: 500px
-    color: #684C53
     margin-left: 6px
-    color: #282e3c
+    color: $header-accent
+    opacity: 0.85
 
     span
       background: image-url('tint.png')
       padding: 5px
       line-height: 35px
-
-
-
-
-
-
-
-
-
-
-
